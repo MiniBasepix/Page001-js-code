@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page001 - [code]jQuey.js</title>
+    <link rel="stylesheet" href="codestyle.css">
+    <link rel="icon" href="code-square.ico">
+</head>
+<body>
+    <h1>Page001 - &lt;File&gt;index.html</h1>
+<pre>
+    window.onload = function() {
+        const spinner = document.getElementById('loading');
+        spinner.classList.add('loaded');
+      }
+    
+    $(function(){
+      setTimeout('stopload()',20000);
+    });
+      
+    function stopload(){
+      $('.loaded').delay(600).fadeOut(300);
+    }
+</pre>
+</body>
+</html>
